@@ -1,0 +1,59 @@
+{
+    "condimentos": [
+        {
+            "name": "Sal",
+            "function": "Salgar",
+            "how": "Só colocar"
+        },
+        {
+            "name": "Pimenta do Reino (Pó)",
+            "function": "Apimentar as coisa :)",
+            "how": "Só colocar"
+            
+        },{
+            "name": "Pimenta Esmagada (Grãos)",
+            "function": "Pimentinhaaa, hmmm",
+            "how": "Só colocar"
+        },{
+            "name": "Orégano Seco",
+            "function": "Oreganar as receita",
+            "how": "Só colocar"
+        },{
+            "name": "Manjericão Seco",
+            "function": "Manjericar as comida",
+            "how": "Só colocar"
+        },{
+            "name": "Molho de Soja",
+            "function": "Enveganizar tudo",
+            "how": "Só colocar"
+        }
+    ],
+    "ervas": [
+        {
+            "name": "Manjericão Fresco",
+            "function": "O nome já diz tudo ;)",
+            "how": "Só colocar"
+        },
+        {
+            "name": "Salsa Fresca",
+            "function": "E é tudo fresco é?",
+            "how": "Só colocar"
+        },{
+            "name": "Cebolinha Fresca",
+            "function": "Hmmm, cebolinhaaaah",
+            "how": "Só colocar"
+        },{
+            "name": "Hortelã Fresca",
+            "function": "Hortelanzinhaaah",
+            "how": "Só colocar"
+        },{
+            "name": "Louro",
+            "function": "Lourinho",
+            "how": "Só colocar"
+        },{
+            "name": "Erva Cidreira",
+            "function": "E vai fazer um chá é?!",
+            "how": "Só colocar"
+        }
+    ]
+}
