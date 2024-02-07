@@ -18,8 +18,7 @@ class _TemperosPage extends State<TemperosPage> {
   List<dynamic> ervas = [];
 
   Future<void> _loadListTemperos() async {
-    String jsonString = await DefaultAssetBundle.of(context)
-        .loadString('lib/assets/temperos.json');
+    String jsonString = await DefaultAssetBundle.of(context).loadString('lib/assets/temperos.json');
     Map<String, dynamic> jsonResponse = jsonDecode(jsonString);
 
     List<dynamic> condimentosList = jsonResponse['condimentos'];
@@ -33,22 +32,8 @@ class _TemperosPage extends State<TemperosPage> {
 
   List<String> temperoPath = ['condimentos', 'ervas'];
 
-  final List<String> _condimentosImg = [
-    'sal',
-    'pimenta_reino_po',
-    'pimenta_esmagada_graos',
-    'oregano_seco',
-    'manjericao_seco',
-    'molho_soja'
-  ];
-  final List<String> _ervasImg = [
-    'manjericao_fresco',
-    'salsa_fresca',
-    'cebolinha_fresca',
-    'hortela_fresca',
-    'louro_folhas',
-    'erva_cidreira'
-  ];
+  final List<String> _condimentosImg = ['sal', 'pimenta_reino_po', 'pimenta_esmagada_graos', 'oregano_seco', 'manjericao_seco', 'molho_soja'];
+  final List<String> _ervasImg = ['manjericao_fresco', 'salsa_fresca', 'cebolinha_fresca', 'hortela_fresca', 'louro_folhas', 'erva_cidreira'];
 
   @override
   void initState() {
@@ -58,12 +43,15 @@ class _TemperosPage extends State<TemperosPage> {
 
   @override
   Widget build(BuildContext context) {
-    void nextPage(BuildContext context, int index) {
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => TemperoView(indexView: index)));
-    }
+    //!! JAMAIS FAÇA FUNÇÕES DENTRO DO BUILD!!!!
+    // void nextPage(BuildContext context, int index) {
+    //   Navigator.push(
+    //       context,
+    //       MaterialPageRoute(
+    //           builder: (context) => TemperoView(tempero: {
+
+    //           },)));
+    // }
 
     return Scaffold(
       appBar: AppBar(
@@ -74,8 +62,7 @@ class _TemperosPage extends State<TemperosPage> {
       ),
       backgroundColor: const Color.fromARGB(255, 252, 252, 252),
       body: ListView.separated(
-          separatorBuilder: (BuildContext context, int index) =>
-              const Divider(),
+          separatorBuilder: (BuildContext context, int index) => const Divider(),
           itemCount: condimentos.length,
           itemBuilder: (BuildContext context, int index) {
             return Container(
@@ -84,31 +71,28 @@ class _TemperosPage extends State<TemperosPage> {
               color: Colors.white,
               child: ListTile(
                 onTap: () {
-                  nextPage(context, index);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => TemperoView(
+                                tempero: temperosIndex ? condimentos[index] : ervas[index],
+                              )));
                 },
                 leading: Container(
                   width: 60,
                   height: 60,
                   decoration: BoxDecoration(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .inversePrimary
-                          .withOpacity(0.5),
-                      borderRadius:
-                          const BorderRadius.all(Radius.circular(10))),
+                      color: Theme.of(context).colorScheme.inversePrimary.withOpacity(0.5),
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
                   child: Image.asset(
                       "lib/assets/images/${temperosIndex ? temperoPath[0] : temperoPath[1]}/${temperosIndex ? _condimentosImg[index] : _ervasImg[index]}.png"),
                 ),
                 title: Text(
-                  temperosIndex
-                      ? condimentos[index]['name']
-                      : ervas[index]['name'],
+                  temperosIndex ? condimentos[index]['name'] : ervas[index]['name'],
                   style: GoogleFonts.montserrat(fontWeight: FontWeight.w400),
                 ),
                 subtitle: Text(
-                  temperosIndex
-                      ? condimentos[index]['function']
-                      : ervas[index]['function'],
+                  temperosIndex ? condimentos[index]['function'] : ervas[index]['function'],
                   style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
                 ),
                 trailing: IconButton(
