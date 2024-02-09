@@ -2,58 +2,82 @@
     "condimentos": [
         {
             "name": "Sal",
-            "function": "Salgar",
-            "how": "Só colocar"
+            "function": "Salgar a comida",
+            "ideal": "Todos os tipos de alimentos cozidos, grelhados ou assados",
+            "how": "O sal deve ser adicionado aos poucos durante o preparo, a quantidade é individualmente preferencial. Em caso de molhos ou alimentos que cozinhem, o sal deve ser corrigido somente ao fim do cozimento",
+            "imagePath": "sal"
         },
         {
-            "name": "Pimenta do Reino (Pó)",
-            "function": "Apimentar as coisa :)",
-            "how": "Só colocar"
+            "name": "Pimenta do Reino",
+            "function": "Realçar o sabor e o aroma da comida",
+            "ideal": "Carnes, peixes, sopas, caldos, omeletes, receitas com queijo e etc",
+            "how": "Pode ser adicionada aos alimentos, cozidos, fritos ou assados, durante o preparo.",
+            "imagePath": "pimenta_reino_po"
             
         },{
-            "name": "Pimenta Esmagada (Grãos)",
-            "function": "Pimentinhaaa, hmmm",
-            "how": "Só colocar"
+            "name": "Alho",
+            "function": "Realçar o sabor e o aroma da comida",
+            "ideal": "Carnes, saladas, molhos e macarrão",
+            "how": "O alho pode ser utilizado cru, cozido ou assado. A intensidade de seu gosto e aroma varia de acordo com a forma que é colocado, sendo mais intenso esmagado, pouco intenso ralado, e mais suave fatiado",
+            "imagePath": "alho"
         },{
             "name": "Orégano Seco",
-            "function": "Oreganar as receita",
-            "how": "Só colocar"
+            "function": "Realçar o sabor e o aroma da comida",
+            "ideal": "Pode ser adicionada a molhos, massas, pizzas e receitas com queijo",
+            "how": "Adicione o Orégano a receita somente ao término do preparamento",
+            "imagePath": "oregano_seco"
         },{
             "name": "Manjericão Seco",
-            "function": "Manjericar as comida",
-            "how": "Só colocar"
+            "function": "Realçar o sabor e aroma da comida",
+            "ideal": "Ideal com tomate em saladas, molhos, sopas, aves, peixes, feijão, abobrinha, ovos, ervilhas, massas, pizza, batata, arroz, e etc ",
+            "how": "Deve ser adicionado à receita após o término do preparo",
+            "imagePath": "manjericao_seco"
         },{
             "name": "Molho de Soja",
-            "function": "Enveganizar tudo",
-            "how": "Só colocar"
+            "function": "Realçar o sabor da comida",
+            "ideal": "Tempero de saladas, frutos do mar, legumes, proteína texturizada de soja, tofu e marinadas de carnes bovinas e de frango",
+            "how": "Deve ser adicionado à receita após o término do preparo em pequena quantidade, pois o molho de soja contém uma quantidade alta de sal",
+            "imagePath": "molho_soja"
         }
     ],
     "ervas": [
         {
             "name": "Manjericão Fresco",
-            "function": "O nome já diz tudo ;)",
-            "how": "Só colocar"
+            "function": "Realçar o sabor e o aroma da comida",
+            "ideal": "Carnes, , frango, peixes, molhos, macarrão, lasanhas, pizzas, receitas com queijo e etc",
+            "how": "Pode ser adicionado à comida tanto durante o preparamento quanto ao término. Seu sabor é intenso, fresco e adocicado, então a quantidade pode ser a gosto",
+            "imagePath": "manjericao_fresco"
         },
         {
             "name": "Salsa Fresca",
-            "function": "E é tudo fresco é?",
-            "how": "Só colocar"
+            "function": "Adicionar sabor e aroma à comida",
+            "ideal": "Fruto do mar, receitas com manteiga e alho, frango e legumes",
+            "how": "Para melhor proveito do sabor pode ser usada crua ao final do preparo da comida, mas também pode ser usada em molhos e guisados. Deve ser usada em moderação",
+            "imagePath": "salsa_fresca"
         },{
             "name": "Cebolinha Fresca",
-            "function": "Hmmm, cebolinhaaaah",
-            "how": "Só colocar"
+            "function": "Adicionar sabor e aroma à comida",
+            "ideal": "Omelete, arroz, massas, fritos, guisados, marinadas de carnes, aves e peixes, sucos, batidas e coquetéis",
+            "how": "Pode ser adicionada durante o preparo ou ao término. Comumente cortada em fatias",
+            "imagePath": "cebolinha_fresca"
         },{
             "name": "Hortelã Fresca",
-            "function": "Hortelanzinhaaah",
-            "how": "Só colocar"
+            "function": "Adicionar sabor e aroma à comida",
+            "ideal": "Guisados, molhos, carnes, aves, peixes, chás, tisanas, bebidas geladas, pasteis e etc",
+            "how": "Pode ser adicionada picada durante o preparo ou ao término da receita, variando sua intensidade, liberando um sabor mais intenso quando crua. Contudo ao adicioná-la durante um preparo dará um sabor mais interessante a receita",
+            "imagePath": "hortela_fresca"
         },{
             "name": "Louro",
-            "function": "Lourinho",
-            "how": "Só colocar"
+            "function": "Adicionar sabor e aroma à comida",
+            "ideal": "Feijão, sopas, guisados, carnes, aves, peixes, marinadas, bebidas quentes e etc",
+            "how": "É adicionado as folhas inteiras em molhos durante o preparo e retirado ao servir o prato",
+            "imagePath": "louro_folhas"
         },{
             "name": "Erva Cidreira",
-            "function": "E vai fazer um chá é?!",
-            "how": "Só colocar"
+            "function": "Adicionar sabor e aroma à comida",
+            "ideal": "Peixes, molhos, recheios, salada de fruta, gelatinas, ",
+            "how": "Deixe descansar por 30 minutos antes de utilizar, e misture ao restante dos temperos",
+            "imagePath": "erva_cidreira"
         }
     ]
 }
